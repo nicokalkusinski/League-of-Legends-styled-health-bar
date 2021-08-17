@@ -28,6 +28,7 @@ function updateText() {
 updateText();
 
 
+
 //dividers
 function makeDividers() {
     let dividers_amount = maxHealth / 100;
@@ -66,4 +67,12 @@ bar.addEventListener("click", () => {
 
     updateBar();
     updateText();
+})
+
+document.getElementById("healthcolor").addEventListener("change", () => {
+    front.style.backgroundColor = document.getElementById("healthcolor").value;
+})
+
+document.getElementById("healthbgcolor").addEventListener("change", () => {
+    back.style.backgroundColor = document.getElementById("healthbgcolor").value;
 })
